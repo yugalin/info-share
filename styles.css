@@ -46,6 +46,10 @@ a:hover { color: var(--accent-strong); }
   padding: 42px 0 80px;
 }
 
+.site-main.poe-main {
+  width: min(1360px, calc(100% - 24px));
+}
+
 .hero {
   padding: 18px 0 28px;
 }
@@ -167,8 +171,8 @@ pre code {
 
 .poe-layout {
   display: grid;
-  grid-template-columns: 260px minmax(0, 1fr);
-  gap: 22px;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 18px;
   align-items: start;
 }
 
@@ -181,7 +185,7 @@ pre code {
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 8px;
-  padding: 14px;
+  padding: 10px;
 }
 
 .poe-sidebar h2 {
@@ -192,7 +196,7 @@ pre code {
 
 .poe-sidebar a {
   display: block;
-  padding: 10px 10px;
+  padding: 8px 8px;
   border-radius: 6px;
   color: var(--text);
   text-decoration: none;
@@ -215,6 +219,7 @@ pre code {
   color: var(--muted);
   line-height: 1.4;
   margin-top: 2px;
+  font-size: 12px;
 }
 
 .poe-entry {
