@@ -96,6 +96,24 @@ ul {
   padding-left: 1.25rem;
 }
 
+ol {
+  padding-left: 1.35rem;
+}
+
+blockquote {
+  margin: 18px 0;
+  padding: 10px 16px;
+  border-left: 4px solid var(--accent);
+  background: #f1f6f5;
+  color: #25313c;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 28px 0;
+}
+
 code {
   background: #eef2f6;
   border-radius: 4px;
@@ -142,9 +160,85 @@ pre code {
   font-size: 14px;
 }
 
+.poe-hero p:last-child {
+  color: var(--muted);
+  max-width: 760px;
+}
+
+.poe-layout {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.poe-sidebar {
+  position: sticky;
+  top: 78px;
+}
+
+.poe-sidebar-inner {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.poe-sidebar h2 {
+  margin: 0 0 10px;
+  padding: 0 0 8px;
+  font-size: 16px;
+}
+
+.poe-sidebar a {
+  display: block;
+  padding: 10px 10px;
+  border-radius: 6px;
+  color: var(--text);
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.poe-sidebar a:hover,
+.poe-sidebar a.active {
+  background: #eef6f4;
+  border-color: #c7ded9;
+}
+
+.poe-sidebar span {
+  display: block;
+  font-weight: 700;
+}
+
+.poe-sidebar small {
+  display: block;
+  color: var(--muted);
+  line-height: 1.4;
+  margin-top: 2px;
+}
+
+.poe-entry {
+  scroll-margin-top: 88px;
+}
+
+.poe-entry-meta {
+  color: var(--accent);
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
 @media (max-width: 640px) {
   .site-header {
     position: static;
+  }
+
+  .poe-layout {
+    display: block;
+  }
+
+  .poe-sidebar {
+    position: static;
+    margin-bottom: 18px;
   }
 
   .index-list li {
