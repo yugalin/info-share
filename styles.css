@@ -227,6 +227,75 @@ pre code {
   margin: 0 0 10px;
 }
 
+.poe-report-index {
+  margin: 22px 0 28px;
+  padding: 18px;
+  border: 1px solid #c7ded9;
+  border-radius: 8px;
+  background: #f3f8f7;
+}
+
+.poe-report-index h2 {
+  margin-top: 0;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.poe-report-index p {
+  margin-top: 4px;
+  color: var(--muted);
+}
+
+.poe-index-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.poe-index-group {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+
+.poe-index-group h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.poe-index-group ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.poe-index-group li {
+  margin: 6px 0;
+}
+
+.poe-video-card {
+  scroll-margin-top: 88px;
+  margin: 28px 0;
+  padding: 18px 0 0;
+  border-top: 1px solid var(--line);
+}
+
+.poe-video-card:first-of-type {
+  border-top: 0;
+}
+
+.poe-video-category {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: #eef6f4;
+  color: var(--accent-strong);
+  font-size: 13px;
+  font-weight: 700;
+}
+
 @media (max-width: 640px) {
   .site-header {
     position: static;
@@ -239,6 +308,10 @@ pre code {
   .poe-sidebar {
     position: static;
     margin-bottom: 18px;
+  }
+
+  .poe-index-grid {
+    grid-template-columns: 1fr;
   }
 
   .index-list li {
